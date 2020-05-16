@@ -31,10 +31,6 @@
     overflow: hidden;
 }
 
-.mask {
-    mask: url(#mask);
-}
-
 .moving-layer, .mask, svg {
     position: absolute;
     height: 100%;
@@ -46,11 +42,10 @@
 .mask {
     z-index: 3;
     background-color: #212121;
+    mask: url(#mask);
 }
 
 .moving-layer {
-    transition: 0.25s linear;
-    display: block;
     left: -100%;
     z-index: 2;
     background-color: #ff4081;
@@ -59,5 +54,5 @@
 
 @keyframes animate {
     from { left: -100%; }
-    to   { left: 100%; }
+    to { left: 100%; }
 }
