@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>How to apply 3D Perspective</title>
+</head>
+<body>
+    <div class="row perspective" style="perspective: 800px;">
+        <div class="element" style="transform: rotateX(0deg) rotateY(0deg);">
+            <span>See my perspective?</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <label for="rotateX">X-axis rotation (degrees)</label>
+        <input type="text" name="rotateX" id="rotateX" value="0">
+        <label for="rotateY">Y-axis rotation (degrees)</label>
+        <input type="text" name="rotateY" id="rotateY" value="0">
+        <label for="perspective">Perspective (Pixels)</label>
+        <input type="text" name="perspective" id="perspective" value="0">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
